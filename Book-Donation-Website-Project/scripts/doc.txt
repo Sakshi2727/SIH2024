@@ -1,0 +1,1 @@
+This folder contains the JavaScript code i.e .js files for the website.

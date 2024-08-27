@@ -1,0 +1,416 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LD Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quintessential' rel='stylesheet'>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">    
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>            
+
+    <script src="https://kit.fontawesome.com/57397afa58.js" crossorigin="anonymous"></script> 
+    <link href='https://fonts.googleapis.com/css?family=Lily Script One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/itcss.css">
+    <style>
+      html
+      {
+        background: url(img/blue.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+        
+      }
+    </style>
+</head>
+<body>
+    <script>
+        $( document ).ready(()=>
+        {
+            $('#dropdowner').dropdown();
+        });
+        function home() {
+        window.location.href = "index.html";
+      }
+      function it() {
+        window.location.href = "it.html";
+      }
+      function about() {
+        window.location.href = "about.html";
+      }
+      function cs() {
+        window.location.href = "cs.html";
+      }
+      function extc()
+      {
+        window.location.href = "extc.html";
+      }
+      function mech()
+      {
+        window.location.href = "mech.html";
+      }
+      function etrx()
+      {
+        window.location.href = "etrx.html";
+      }
+     </script>
+     
+    <!-- NAVBAR -->
+    <div class="navbar-fixed">
+        
+      <nav class="z-depth-0 grey darken-3">
+      
+        <a href="https://ldce.ac.in/" class="brand-logo left">
+            <img src="img/LD.png" style="width: 64px;">
+          </a>
+        <div class="nav-wrapper container">
+    
+          <ul id="nav-mobile" class="left center hide-on-med-and-down" >
+            <a href="#" class="brand-logo center" style="font-family: 'Quintessential';font-size: 33px;">&nbsp;&nbsp;&nbsp;LD Books&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+              <i class="material-icons">menu</i>
+            </a>
+            <li class="active"><a onclick="home()" style="font-size: 17px;">Home</a></li>
+            <li class="logged-in" style="display:none;"><a class='dropdown-trigger' style="font-size: 17px;" id="dropdowner" href='#' data-target='dropdown1'>Branch<i class="material-icons right">arrow_drop_down</i></a>
+                </li>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a onclick="it()">IT</a></li>
+              <li><a onclick="cs()">CS</a></li>
+             
+            
+              <li><a onclick="extc()">EXTC</a></li>
+              <li><a onclick="mech()">MECH</a></li>
+              <li><a onclick="etrx()">ETRX</a></li>
+            </ul>
+           
+ 
+            <li><a onclick="about()" style="font-size: 17px;">About us&nbsp;&nbsp;&nbsp;</a></li>
+           
+          </ul>
+         
+          <ul id="nav-mobile" class="right center hide-on-med-and-down">
+        
+          
+            <li class="logged-in" style="display:none;">
+              <a href="#" class=" modal-trigger" data-target="modal-account" style="font-size: 17px;">Account</a>
+            </li>
+  
+            <li class="logged-in" style="display:none;">
+              <a href="#" class=" modal-trigger" data-target="modal-create" style="font-size: 17px;">Add book&nbsp;&nbsp;<i class="fas fa-plus-circle" style="font-size: 17px;"></i></a>
+            </li>
+            <li class="logged-in" style="display:none;">
+              <a href="#" id="logout" onclick="home()" style="font-size: 17px;">Logout&nbsp;&nbsp;<i class="fas fa-user-minus" style="font-size: 17px;"></i>
+  
+              </a>
+            </li>
+            <li class="logged-out" style="display:none;">
+              <a href="#" class=" modal-trigger" data-target="modal-login" style="font-size: 17px;"><i class="fas fa-user-circle" style="font-size: 19px;"></i>&nbsp;&nbsp;Login</a>
+            </li>
+            <li class="logged-out" style="display:none;">
+              <a href="#" class=" modal-trigger" data-target="modal-signup" style="font-size: 17px;">Sign up&nbsp;&nbsp;<i class="fas fa-user-plus" style="font-size: 17px;"></i></a>
+            </li>
+            
+        </ul>
+         
+         
+        </div>
+      </nav>
+    </div>
+
+  <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+    <div class="modal-content">
+      <h4>Sign up</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">LD Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Choose password</label>
+        </div>
+        <div class="input-field">
+          <i class = "material-icons prefix">account_circle</i>
+          <input type="text" id="name" required />
+            <label for="name">Full name</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="year" required placeholder="FY/SY/TY/LY"/>
+            <label for="year">Year</label>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-shield-alt" style="font-size:24px;"></i>
+              <br>
+                <input type="text" id="branch" placeholder="IT/CS/EXTC/MECH/ETRX"  required />
+                <label for="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Branch</label>
+            </div>
+      <div class="input-field">
+        <i class="material-icons prefix">phone</i>
+        <input type="tel" id="contact" required />
+        <label for="contact">Contact Number</label>
+      </div>
+        <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+          <p class="error pink-text center-align"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field col">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="login-email" required />
+          <label for="login-email">LD Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        
+        <button class="btn yellow darken-2 z-depth-0">Login</button>
+        <p class="error pink-text center-align"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ACCOUNT MODAL -->
+  <div id="modal-account" class="modal">
+    <div class="modal-content center-align">
+      <h4 style="font-family: 'Quintessential';color:rgb(248, 60, 107)">Account details</h4><br />
+      <div class="account-details"></div>
+    </div>
+  </div>
+
+<!-- CREATE GUIDE MODAL -->
+<div id="modal-create" class="modal">
+  <div class="modal-content">
+    <h4 style="font-family: 'Quintessential';color:rgb(248, 60, 107)">Add book</h4><br />
+    <form id="create-form">
+      <div class="input-field">
+        <i class="material-icons prefix">book</i>
+        <input type="text" id="recipe" required>
+        <label for="recipe">Book name</label>
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">person</i>
+        <input type="text" id="auth" required>
+        <label for="auth">Author name</label>
+      </div>
+      <br>
+      <div class="input-field">
+        <i class = "material-icons prefix">school</i>
+          <input type="text" id="year" placeholder="FY/SY/TY/LY" required>
+          <label for="year" >Book of Year</label>
+        </div>
+        <div class="input-field">
+          <i class = "material-icons prefix">account_circle</i>
+          <input type="text" id="owner" required>
+          <label for="owner">Owner name</label>
+        </div>
+        <div class="input-field">
+              
+          <i class="fas fa-shield-alt" style="font-size:24px;"></i>
+          <br>
+            <input type="text" id="branch" placeholder="IT/CS/EXTC/MECH/ETRX" required />
+            <label for="branch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Book of Branch</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">phone</i>
+          <input type="tel" id="contact" pattern="[7-9]{1}[0-9]{9}" required>
+          <label for="contact">Contact Number</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email" required>
+          <label for="email">LD Email address</label>
+        </div>
+      <button class="btn red darken-2 z-depth-0">Add</button>
+    </form>
+  </div>
+</div>
+
+<div class="tab" style="position: fixed;">
+  <button class="tablinks" onclick="openCity(event, 'First Year')" id="defaultOpen">First Year</button>
+  <button class="tablinks" onclick="openCity(event, 'Second Year')">Second Year</button>
+  <button class="tablinks" onclick="openCity(event, 'Third Year')">Third Year</button>
+  <button class="tablinks" onclick="openCity(event, 'Last Year')">Last Year</button>
+</div>
+
+<h3 align="center" style="color:white;font-family: 'Aclonica';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electronics and Telecommunication  <i class="fa fa-microchip" aria-hidden="true"></i></h2>
+  <br><div align="center">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="img/ext.jpg" width="450px" height="260px" style="border: 3px solid white;border-radius: 5%;">
+  </div>
+  <br>
+  <div id="First Year" class="tabcontent">
+    <h3 align="center" style="font-family: 'Quintessential';"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FY BTech Subjects  <i class="fas fa-book"></i></h3>
+      <br>
+                        <div class="sub">
+                          <ol >
+                            <li>Applied Mathematics-I</li>
+                            <br>
+                            <li>Applied Mathematics-II</li><br>
+                            <li>Engineering Chemistry</li><br>
+                            <li>Engineering Drawing</li><br>
+                            <li>Engineering Physics</li><br>
+                            <li>Engineering Mechanics</li><br>
+                            <li>Programming in C</li><br>
+                            <br>
+                        </ol>
+      
+                          
+                          <h3><strong>Books available  <i class="fas fa-book-open"></i></strong></h3>
+                          </div>
+                          <ul class=" des boo2"></ul>
+                                                                
+</div>
+
+    <div id="Second Year" class="tabcontent">
+      <h3 align="center" style="font-family: 'Quintessential';"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SY BTech Subjects  <i class="fas fa-book"></i></strong></h3>
+      <div class="sub">
+        <ol>
+          <li>Applied Mathematics-III</li>
+          <br>
+          <li>Analog Electronics I</li><br>
+          <li>Digital Logic Design</li><br>
+          <li>Electrical Networks</li><br>
+          <li>Data Analysis and Interpretation</li><br>
+          <li>Applied Mathematics-IV</li><br>
+          <li>Analog Electronics II</li><br>
+          <li>Signals and Systems</li><br>
+          <li>Electromagnetic Field Theory</li><br>
+          <li>Control Systems</li>
+          </ol>                              
+                            <br>
+                            <h3><strong>Books available  <i class="fas fa-book-open"></i></strong></h3>
+                          </div>
+                            <ul class="boo2 des"></ul>
+                            
+    </div>
+    
+    <div id="Third Year" class="tabcontent">
+      <h3 align="center" style="font-family: 'Quintessential';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TY BTech Subjects  <i class="fas fa-book"></i></h3>
+      <br>
+                            
+      <div class="sub">
+        <ol>
+          <li>Communication Systems</li>
+          <br>
+          <li>Random Signal and processes</li><br>
+          <li>RF Filters and Antennas</li><br>
+          <li>Microprocessor and Microcontroller</li><br>
+          <li>Integrated circuits</li><br>
+          <li>Digital Signal Processing</li><br>
+          <li>Digital communication</li><br>
+          <li>VLSI Design</li><br>
+          <li>Computer Communication Networks</li><br>
+          <li>Operating System</li>
+          
+      </ol>
+  
+                            
+                          <h3><strong>Books available  <i class="fas fa-book-open"></i></strong></h3>
+                            </div> 
+                          <ul class="boo2 des"></ul>
+                        
+    </div>
+   
+    <div id="Last Year" class="tabcontent">
+      <h3 align="center" style="font-family: 'Quintessential';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LY BTech Subjects  <i class="fas fa-book"></i></h3>
+      <br>
+      <div class="sub">
+        <ol>
+          <li>Wireless Communication</li>
+          <br>
+          <li>Microwave Engineering</li><br>
+          <li>Image Processing</li><br>
+          <li>Speech Processing</li><br>
+          <li>Neural networks and Fuzzy Logic</li><br>
+          <li>Real-time Operating Systems</li><br>
+          <li>Radar and satellite communication</li><br>
+          <li>Digital TV</li><br>
+          <li>Optical Fibre Communication</li><br>
+          <li>Cryptography and System Security</li>
+          
+      </ol>
+      
+     
+    <h3><strong>Books available  <i class="fas fa-book-open"></i></strong></h3>
+      </div>
+    <ul class="boo2 des"></ul>
+    
+</div>
+
+
+
+<script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+apiKey: "AIzaSyD6OFucHUift1MmRqk1GhiyECgmO73iApE",
+authDomain: "bookme-5ee26.firebaseapp.com",
+databaseURL: "https://bookme-5ee26.firebaseio.com",
+projectId: "bookme-5ee26",
+storageBucket: "bookme-5ee26.appspot.com",
+messagingSenderId: "122586527272",
+appId: "1:122586527272:web:8e694f84481b1419b4671d",
+measurementId: "G-H42JP38Z1Q"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+const auth=firebase.auth();
+const db=firebase.firestore();
+
+</script>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/index.js"></script>
+   
+</body>
+</html> 
