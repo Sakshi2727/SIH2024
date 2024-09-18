@@ -1,0 +1,36 @@
+.containss{
+    height: 900px !important;
+   
+       /* margin-left:40px */
+      
+}
+.book-item{
+    display: flex;
+  flex-direction: column; /* Ensures content stacks properly */
+  justify-content: space-between; 
+  margin-left: 30px;
+  margin-top:10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  overflow: hidden; 
+ flex-wrap: wrap;
+}
+.book-item2{
+    border-radius: 20px;
+}
+.book-item2 .img{
+    width: 100%;
+    height: auto; 
+   
+    border-radius: inherit; 
+}
+.dlt{
+    margin-left:20px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+.upd{
+    margin-left:18px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}

@@ -1,0 +1,12 @@
+hr {
+    background-color: #fff;
+    padding: 0;
+    margin: 80px;
+  }
+  
+  /* Specific HR Styling with Class hr-13 */
+  hr.hr-13 {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #ff914d inset;
+  }

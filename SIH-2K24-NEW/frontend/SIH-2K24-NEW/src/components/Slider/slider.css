@@ -1,0 +1,133 @@
+/* Importing slick carousel styles */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.homeSlider {
+    margin-top: 110px; 
+    width: 100%;
+    max-width: none;
+}
+
+.homeSlider .contains {
+  margin-left: 35.6px;
+  background-color: rgb(245,235,231);
+  border-radius: 30px;
+  width: 95% !important;
+}
+
+.contains2 {
+  margin-left: 35.6px;
+  border-radius: 20px;
+  width: 95% !important;
+  background-color: rgba(164,207,240,0.7);
+  border-radius: 30px;
+}
+
+.contains3 {
+  background-color: #cbf5dd;
+  margin-left: 35.6px;
+  border-radius: 20px;
+  width: 95% !important;
+  border-radius: 30px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-content .imgset {
+  height: 400px;
+  float: right;
+  width: 600px;
+  margin-bottom: 24px;
+  margin-right: 20px;
+}
+
+.imgset {
+  float: right;
+}
+
+.homeslidermain .slick-dots {
+  position: absolute;
+  bottom: 30px !important;
+}
+
+.homeslidermain .slick-dots button::before {
+  width: 10px !important;
+  height: 10px !important;
+  font-size: 14px !important;
+}
+
+.slick-active-button::before {
+  color: #cbf5dd !important;
+}
+
+.homeslidermain .image-content {
+  position: relative;
+}
+
+.homeslidermain .image-content .info {
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  z-index: 100;
+}
+
+.homeslidermain .image-content .info h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  color: rgba(167,119,85,0.7);
+}
+
+.homeslidermain .image-content .info p {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.5);
+}
+
+.homeslidermain .image-content .info1 {
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  z-index: 100;
+}
+
+.homeslidermain .image-content .info1 h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  color: rgba(24,95,173,0.7);
+}
+
+.homeslidermain .image-content .info1 p {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(24,95,173,0.6);
+}
+
+.homeslidermain .image-content .info2 {
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  z-index: 100;
+}
+
+.homeslidermain .image-content .info2 h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  color: rgba(28, 172, 120,0.7);
+}
+
+.homeslidermain .image-content .info2 p {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(28, 172, 120,0.6);
+}

@@ -1,0 +1,46 @@
+.auto-panel {
+    background-color: #AFE1AF;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scrolling-text {
+    display: flex;
+    align-items: center;
+    animation: scroll 25s linear infinite;
+  }
+  
+  .stat-item {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: #004aad;
+    margin-right: 30px;
+  }
+  
+  .stat-item p {
+    margin: 0;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    width: 16px;  
+    height: 16px;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #ff914d;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

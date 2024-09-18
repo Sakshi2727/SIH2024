@@ -1,0 +1,43 @@
+.books2-bg {
+    background: #f0ffff;
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  
+  .big {
+    font-size: 50px;
+  }
+  
+  .font-suse-bold {
+    font-family: "SUSE", sans-serif;
+    font-weight: 200;
+  }
+  
+  .underlined {
+    position: relative;
+    display: inline-block !important;
+  }
+  
+  .underlined::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    height: 7px;
+    width: 0;
+    border: solid 8px #ff914d;
+    border-color: #ff914d transparent transparent transparent;
+    border-radius: 50%;
+    transition: width 0.5s ease-out;
+    z-index: 1; /* Ensure it is above other elements */
+  }
+  
+  .scroll-animate.animated::before {
+    width: 100% !important; /* Make sure it expands fully */
+  }
+  
+  .scroll-animate.animated {
+    opacity: 1 !important;
+  }
+  
